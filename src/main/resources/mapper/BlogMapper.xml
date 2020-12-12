@@ -1,0 +1,16 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bgw.mybatis.example.BlogMapper">
+    <select id="getBlogs" resultType="com.bgw.mybatis.example.Blog">
+        select *
+        from t_blog
+    </select>
+
+    <select id="selectBlog" resultType="com.bgw.mybatis.example.Blog">
+        select id, title, content, author, create_time createTime, update_time updateTime, status
+        from t_blog
+        where id = #{id}
+    </select>
+</mapper>
