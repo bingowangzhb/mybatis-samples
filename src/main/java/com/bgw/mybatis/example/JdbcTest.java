@@ -1,5 +1,7 @@
 package com.bgw.mybatis.example;
 
+import com.bgw.mybatis.example.domain.Blog;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;

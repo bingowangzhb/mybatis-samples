@@ -1,4 +1,4 @@
-package com.bgw.mybatis.example;
+package com.bgw.mybatis.example.domain;
 
 import lombok.Data;
 import lombok.ToString;
