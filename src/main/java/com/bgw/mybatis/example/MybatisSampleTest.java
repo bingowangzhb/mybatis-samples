@@ -8,6 +8,8 @@ import org.apache.ibatis.io.VFS;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.junit.Before;
+import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,30 +26,32 @@ public class MybatisSampleTest {
 
     static Logger log = LoggerFactory.getLogger(MybatisSampleTest.class);
 
-    public static void main(String[] args) throws Exception {
+    static SqlSessionFactory sqlSessionFactory = null;
 
-
+    @Before
+    public void setup() throws Exception {
         String resource = "conf/mybatis-config.xml";
         InputStream inputStream = Resources.getResourceAsStream(resource);
-        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
-
-        selectByMapper(sqlSessionFactory);
+        sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
     }
 
-    public static void testVfs() throws Exception {
+
+    @Test
+    public void testVfs() throws Exception {
         VFS vfs = new DefaultVFS();
         vfs.list(".").forEach(log::info);
     }
 
-
-    public static void selectSqlSession(SqlSessionFactory sqlSessionFactory) {
+    @Test
+    public void selectSqlSession() {
         try (SqlSession sqlSession = sqlSessionFactory.openSession()) {
             Blog blog = sqlSession.selectOne("com.bgw.mybatis.example.mapper.BlogMapper.getBlog", 1);
             log.info("blog : {}", blog);
         }
     }
 
-    public static void selectByMapper(SqlSessionFactory sqlSessionFactory) {
+    @Test
+    public void selectByMapper1() {
         try (SqlSession sqlSession = sqlSessionFactory.openSession()) {
             BlogMapper blogMapper = sqlSession.getMapper(BlogMapper.class);
             log.info("bolgMapper.class {}, hashCode: {}", blogMapper.getClass(), blogMapper.hashCode());
@@ -65,5 +69,13 @@ public class MybatisSampleTest {
         }
     }
 
-
+    @Test
+    public void selectByMapper2() {
+        try (SqlSession sqlSession = sqlSessionFactory.openSession()) {
+            BlogMapper blogMapper = sqlSession.getMapper(BlogMapper.class);
+            log.info("bolgMapper.class {}, hashCode: {}", blogMapper.getClass(), blogMapper.hashCode());
+            Blog blog = blogMapper.getBlog(1);
+            log.info("blog : {}", blog);
+        }
+    }
 }

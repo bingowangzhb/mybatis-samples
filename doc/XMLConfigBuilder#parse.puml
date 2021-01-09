@@ -1,0 +1,67 @@
+@startuml
+participant User
+participant XMLConfigBuilder as A
+participant XPathParser as B
+participant Configuration as C
+participant TypeAliasRegistry as D
+
+
+User -> A ++ : 1.parse
+A -> A ++ : 1.1.parseConfiguration
+A -> B ++ : 1.1.1.setVariables
+return
+A -> C ++ : 1.1.2.setVariables
+return
+return
+
+A -> A : 1.2.propertiesElement
+A -> A : 1.3.settingsAsProperties
+
+A -> A ++ : 1.4.loadCustomVfs
+A -> C ++ : 1.4.1.setVfsImpl
+return
+return
+
+A -> A ++ : 1.5.loadCustomLogImpl
+A -> C ++ : 1.5.1.setLogImpl
+return
+return
+
+A -> A ++ : 1.6.typeAliasesElement
+A -> D ++ : 1.6.1.registerAlias
+return
+return
+
+
+A -> A ++ : 1.7.pluginElement
+A -> C ++ : 1.7.1.addInterceptor
+return
+return
+
+A -> A ++ : 1.8.objectFactoryElement
+A -> C ++ : 1.8.1.setObjectFactory
+return
+return
+
+A -> A ++ : 1.9.objectWrapperFactoryElement
+A -> C ++ : 1.9.1.setObjectWrapperFactory
+return
+return
+
+A -> A ++ : 1.10.reflectorFactoryElement
+A -> C ++ : 1.10.1.setReflectorFactory
+return
+return
+
+A -> A : 1.11.settingsElement
+A -> A ++ : 1.12.environmentsElement
+A -> C ++ : 1.12.1.setEnvironment
+return
+return
+
+A -> A : 1.13.databaseIdProviderElement
+A -> A : 1.14.typeHandlerElement
+A -> A : 1.15.mapperElement
+
+return
+@enduml

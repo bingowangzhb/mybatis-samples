@@ -3,12 +3,30 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.bgw.mybatis.example.mapper.BlogMapper">
+
+    <cache eviction="FIFO" flushInterval="60000" size="512" readOnly="true" >
+        <property name="cacheFile" value="/tmp/my-custom-cache.tmp"/>
+    </cache>
+
+    <sql id="blogColumns">
+        id,
+        title,
+        content,
+        author,
+        create_time,
+        update_time,
+        status
+    </sql>
+
+
+
     <select id="getBlogs" resultType="Blog">
-        select *
+        select
+        <include refid="blogColumns" />
         from t_blog
     </select>
 
-    <select id="getBlog" resultType="Blog" parameterType="int">
+    <select id="getBlog" resultType="Blog" parameterType="int" useCache="true">
         select id, title, content, author, create_time createTime, update_time updateTime, status
         from t_blog
         where id = #{id}
