@@ -24,6 +24,7 @@
         <setting name="localCacheScope" value="SESSION"/>
         <setting name="jdbcTypeForNull" value="OTHER"/>
         <setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString"/>
+        <setting name="logImpl" value="SLF4J"/>
     </settings>
 
     <typeAliases>
@@ -52,9 +53,10 @@
 
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://10.10.113.65:3306/my-sample"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/mybatis-samples"/>
                 <property name="username" value="root"/>
-                <property name="password" value="123.abc"/>
+<!--                <property name="password" value="123.abc"/>-->
+                <property name="password" value="root"/>
             </dataSource>
         </environment>
     </environments>

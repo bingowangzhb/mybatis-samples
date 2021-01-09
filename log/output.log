@@ -1,0 +1,160 @@
+00:31:39.271 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+00:31:39.274 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+00:31:39.296 [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+00:31:39.296 [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+00:31:39.296 [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+00:31:39.296 [main] DEBUG o.a.i.d.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+00:31:39.372 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction - Opening JDBC Connection
+00:31:40.482 [main] DEBUG o.a.i.d.pooled.PooledDataSource - Created connection 974308356.
+00:31:40.482 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a12c404]
+00:31:40.486 [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlog - ==>  Preparing: select id, title, content, author, create_time createTime, update_time updateTime, status from t_blog where id = ? 
+00:31:40.504 [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlog - ==> Parameters: 1(Integer)
+00:31:40.518 [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlog - <==      Total: 1
+00:31:40.519 [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlogs - ==>  Preparing: select * from t_blog 
+00:31:40.520 [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlogs - ==> Parameters: 
+00:31:40.521 [main] WARN  o.a.i.s.AutoMappingUnknownColumnBehavior - Unknown column is detected on 'com.bgw.mybatis.example.mapper.BlogMapper.getBlogs' auto-mapping. Mapping parameters are [columnName=create_time,propertyName=create_time,propertyType=null]
+00:31:40.521 [main] WARN  o.a.i.s.AutoMappingUnknownColumnBehavior - Unknown column is detected on 'com.bgw.mybatis.example.mapper.BlogMapper.getBlogs' auto-mapping. Mapping parameters are [columnName=update_time,propertyName=update_time,propertyType=null]
+00:31:40.522 [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlogs - <==      Total: 1
+00:31:40.522 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a12c404]
+00:31:40.522 [main] DEBUG o.a.i.t.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a12c404]
+00:31:40.522 [main] DEBUG o.a.i.d.pooled.PooledDataSource - Returned connection 974308356 to pool.
+[2021-01-02 00:32:06.351] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-01-02 00:32:06.354] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-01-02 00:32:06.374] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-02 00:32:06.374] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-02 00:32:06.374] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-02 00:32:06.374] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-02 00:32:06.449] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Opening JDBC Connection
+[2021-01-02 00:32:07.538] [main] DEBUG o.a.i.d.pooled.PooledDataSource : Created connection 974308356.
+[2021-01-02 00:32:07.538] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a12c404]
+[2021-01-02 00:32:07.543] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlog : ==>  Preparing: select id, title, content, author, create_time createTime, update_time updateTime, status from t_blog where id = ? 
+[2021-01-02 00:32:07.566] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlog : ==> Parameters: 1(Integer)
+[2021-01-02 00:32:07.585] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlog : <==      Total: 1
+[2021-01-02 00:32:07.586] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlogs : ==>  Preparing: select * from t_blog 
+[2021-01-02 00:32:07.587] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlogs : ==> Parameters: 
+[2021-01-02 00:32:07.588] [main] WARN  o.a.i.s.AutoMappingUnknownColumnBehavior : Unknown column is detected on 'com.bgw.mybatis.example.mapper.BlogMapper.getBlogs' auto-mapping. Mapping parameters are [columnName=create_time,propertyName=create_time,propertyType=null]
+[2021-01-02 00:32:07.589] [main] WARN  o.a.i.s.AutoMappingUnknownColumnBehavior : Unknown column is detected on 'com.bgw.mybatis.example.mapper.BlogMapper.getBlogs' auto-mapping. Mapping parameters are [columnName=update_time,propertyName=update_time,propertyType=null]
+[2021-01-02 00:32:07.589] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlogs : <==      Total: 1
+[2021-01-02 00:32:07.590] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a12c404]
+[2021-01-02 00:32:07.590] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a12c404]
+[2021-01-02 00:32:07.590] [main] DEBUG o.a.i.d.pooled.PooledDataSource : Returned connection 974308356 to pool.
+[2021-01-02 14:00:47.497] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-01-02 14:02:07.727] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-01-02 14:02:07.757] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-02 14:02:07.757] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-02 14:02:07.757] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-02 14:02:07.757] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-02 14:02:07.838] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Opening JDBC Connection
+[2021-01-02 14:02:08.969] [main] DEBUG o.a.i.d.pooled.PooledDataSource : Created connection 1233308726.
+[2021-01-02 14:02:08.972] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4982cc36]
+[2021-01-02 14:02:08.977] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlog : ==>  Preparing: select id, title, content, author, create_time createTime, update_time updateTime, status from t_blog where id = ? 
+[2021-01-02 14:02:08.995] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlog : ==> Parameters: 1(Integer)
+[2021-01-02 14:02:09.008] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlog : <==      Total: 1
+[2021-01-02 14:02:09.008] [main] INFO  c.b.m.example.MybatisSampleTest : blog : Blog(id=1, title=bbc, content=HelloWorld, author=zhangsan, createTime=Sun Dec 06 21:21:48 CST 2020, updateTime=Sun Dec 06 21:21:51 CST 2020, status=0)
+[2021-01-02 14:02:09.010] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlogs : ==>  Preparing: select * from t_blog 
+[2021-01-02 14:02:09.010] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlogs : ==> Parameters: 
+[2021-01-02 14:02:09.012] [main] WARN  o.a.i.s.AutoMappingUnknownColumnBehavior : Unknown column is detected on 'com.bgw.mybatis.example.mapper.BlogMapper.getBlogs' auto-mapping. Mapping parameters are [columnName=create_time,propertyName=create_time,propertyType=null]
+[2021-01-02 14:02:09.012] [main] WARN  o.a.i.s.AutoMappingUnknownColumnBehavior : Unknown column is detected on 'com.bgw.mybatis.example.mapper.BlogMapper.getBlogs' auto-mapping. Mapping parameters are [columnName=update_time,propertyName=update_time,propertyType=null]
+[2021-01-02 14:02:09.012] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlogs : <==      Total: 1
+[2021-01-02 14:02:09.012] [main] INFO  c.b.m.example.MybatisSampleTest : b : Blog(id=1, title=bbc, content=HelloWorld, author=zhangsan, createTime=null, updateTime=null, status=0)
+[2021-01-02 14:02:09.012] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4982cc36]
+[2021-01-02 14:02:09.013] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@4982cc36]
+[2021-01-02 14:02:09.013] [main] DEBUG o.a.i.d.pooled.PooledDataSource : Returned connection 1233308726 to pool.
+[2021-01-02 15:31:14.315] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-01-02 15:31:14.322] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-01-02 15:31:23.317] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-02 15:31:23.318] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-02 15:31:23.318] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-02 15:31:23.318] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-02 15:31:26.631] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Opening JDBC Connection
+[2021-01-02 15:31:27.748] [main] DEBUG o.a.i.d.pooled.PooledDataSource : Created connection 872306601.
+[2021-01-02 15:31:27.751] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@33fe57a9]
+[2021-01-02 15:31:27.756] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlog : ==>  Preparing: select id, title, content, author, create_time createTime, update_time updateTime, status from t_blog where id = ? 
+[2021-01-02 15:31:27.777] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlog : ==> Parameters: 1(Integer)
+[2021-01-02 15:31:27.796] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlog : <==      Total: 1
+[2021-01-02 15:31:27.797] [main] INFO  c.b.m.example.MybatisSampleTest : blog : Blog(id=1, title=bbc, content=HelloWorld, author=zhangsan, createTime=Sun Dec 06 21:21:48 CST 2020, updateTime=Sun Dec 06 21:21:51 CST 2020, status=0)
+[2021-01-02 15:31:27.799] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlogs : ==>  Preparing: select * from t_blog 
+[2021-01-02 15:31:27.799] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlogs : ==> Parameters: 
+[2021-01-02 15:31:27.801] [main] WARN  o.a.i.s.AutoMappingUnknownColumnBehavior : Unknown column is detected on 'com.bgw.mybatis.example.mapper.BlogMapper.getBlogs' auto-mapping. Mapping parameters are [columnName=create_time,propertyName=create_time,propertyType=null]
+[2021-01-02 15:31:27.802] [main] WARN  o.a.i.s.AutoMappingUnknownColumnBehavior : Unknown column is detected on 'com.bgw.mybatis.example.mapper.BlogMapper.getBlogs' auto-mapping. Mapping parameters are [columnName=update_time,propertyName=update_time,propertyType=null]
+[2021-01-02 15:31:27.802] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlogs : <==      Total: 1
+[2021-01-02 15:31:27.802] [main] INFO  c.b.m.example.MybatisSampleTest : b : Blog(id=1, title=bbc, content=HelloWorld, author=zhangsan, createTime=null, updateTime=null, status=0)
+[2021-01-02 15:31:27.802] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@33fe57a9]
+[2021-01-02 15:31:27.803] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@33fe57a9]
+[2021-01-02 15:31:27.804] [main] DEBUG o.a.i.d.pooled.PooledDataSource : Returned connection 872306601 to pool.
+[2021-01-02 15:32:23.519] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-01-02 15:32:23.522] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-01-02 15:32:23.543] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-02 15:32:23.543] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-02 15:32:23.543] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-02 15:32:23.543] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-02 15:47:46.220] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Opening JDBC Connection
+[2021-01-02 15:47:47.359] [main] DEBUG o.a.i.d.pooled.PooledDataSource : Created connection 1233308726.
+[2021-01-02 15:47:47.360] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4982cc36]
+[2021-01-02 15:47:47.366] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlog : ==>  Preparing: select id, title, content, author, create_time createTime, update_time updateTime, status from t_blog where id = ? 
+[2021-01-02 15:47:47.389] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlog : ==> Parameters: 1(Integer)
+[2021-01-02 15:47:47.405] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlog : <==      Total: 1
+[2021-01-02 15:47:47.406] [main] INFO  c.b.m.example.MybatisSampleTest : blog : Blog(id=1, title=bbc, content=HelloWorld, author=zhangsan, createTime=Sun Dec 06 21:21:48 CST 2020, updateTime=Sun Dec 06 21:21:51 CST 2020, status=0)
+[2021-01-02 15:47:47.408] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlogs : ==>  Preparing: select * from t_blog 
+[2021-01-02 15:47:47.408] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlogs : ==> Parameters: 
+[2021-01-02 15:47:47.410] [main] WARN  o.a.i.s.AutoMappingUnknownColumnBehavior : Unknown column is detected on 'com.bgw.mybatis.example.mapper.BlogMapper.getBlogs' auto-mapping. Mapping parameters are [columnName=create_time,propertyName=create_time,propertyType=null]
+[2021-01-02 15:47:47.411] [main] WARN  o.a.i.s.AutoMappingUnknownColumnBehavior : Unknown column is detected on 'com.bgw.mybatis.example.mapper.BlogMapper.getBlogs' auto-mapping. Mapping parameters are [columnName=update_time,propertyName=update_time,propertyType=null]
+[2021-01-02 15:47:47.412] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlogs : <==      Total: 1
+[2021-01-02 15:47:47.412] [main] INFO  c.b.m.example.MybatisSampleTest : b : Blog(id=1, title=bbc, content=HelloWorld, author=zhangsan, createTime=null, updateTime=null, status=0)
+[2021-01-02 15:47:47.412] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4982cc36]
+[2021-01-02 15:47:47.413] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@4982cc36]
+[2021-01-02 15:47:47.413] [main] DEBUG o.a.i.d.pooled.PooledDataSource : Returned connection 1233308726 to pool.
+[2021-01-02 15:48:42.830] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-01-02 15:48:42.833] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-01-02 15:48:42.854] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-02 15:48:42.854] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-02 15:48:42.854] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-02 15:48:42.854] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-02 15:48:46.496] [main] INFO  c.b.m.example.MybatisSampleTest : bolgMapper.class class com.sun.proxy.$Proxy2
+[2021-01-02 15:48:46.515] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Opening JDBC Connection
+[2021-01-02 15:48:47.608] [main] DEBUG o.a.i.d.pooled.PooledDataSource : Created connection 236567414.
+[2021-01-02 15:48:47.608] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@e19bb76]
+[2021-01-02 15:48:47.612] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlog : ==>  Preparing: select id, title, content, author, create_time createTime, update_time updateTime, status from t_blog where id = ? 
+[2021-01-02 15:48:47.632] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlog : ==> Parameters: 1(Integer)
+[2021-01-02 15:48:47.646] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlog : <==      Total: 1
+[2021-01-02 15:48:47.647] [main] INFO  c.b.m.example.MybatisSampleTest : blog : Blog(id=1, title=bbc, content=HelloWorld, author=zhangsan, createTime=Sun Dec 06 21:21:48 CST 2020, updateTime=Sun Dec 06 21:21:51 CST 2020, status=0)
+[2021-01-02 15:48:47.647] [main] INFO  c.b.m.example.MybatisSampleTest : bolgMapper2.class class com.sun.proxy.$Proxy2
+[2021-01-02 15:48:47.647] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlogs : ==>  Preparing: select * from t_blog 
+[2021-01-02 15:48:47.648] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlogs : ==> Parameters: 
+[2021-01-02 15:48:47.649] [main] WARN  o.a.i.s.AutoMappingUnknownColumnBehavior : Unknown column is detected on 'com.bgw.mybatis.example.mapper.BlogMapper.getBlogs' auto-mapping. Mapping parameters are [columnName=create_time,propertyName=create_time,propertyType=null]
+[2021-01-02 15:48:47.649] [main] WARN  o.a.i.s.AutoMappingUnknownColumnBehavior : Unknown column is detected on 'com.bgw.mybatis.example.mapper.BlogMapper.getBlogs' auto-mapping. Mapping parameters are [columnName=update_time,propertyName=update_time,propertyType=null]
+[2021-01-02 15:48:47.650] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlogs : <==      Total: 1
+[2021-01-02 15:48:47.650] [main] INFO  c.b.m.example.MybatisSampleTest : b : Blog(id=1, title=bbc, content=HelloWorld, author=zhangsan, createTime=null, updateTime=null, status=0)
+[2021-01-02 15:48:47.651] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@e19bb76]
+[2021-01-02 15:48:47.651] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@e19bb76]
+[2021-01-02 15:48:47.651] [main] DEBUG o.a.i.d.pooled.PooledDataSource : Returned connection 236567414 to pool.
+[2021-01-02 15:59:01.810] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-01-02 15:59:01.814] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-01-02 15:59:01.837] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-02 15:59:01.837] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-02 15:59:01.837] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-02 15:59:01.837] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-02 15:59:01.897] [main] INFO  c.b.m.example.MybatisSampleTest : bolgMapper.class class com.sun.proxy.$Proxy2, hashCode: 1348453796
+[2021-01-02 15:59:01.914] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Opening JDBC Connection
+[2021-01-02 15:59:03.093] [main] DEBUG o.a.i.d.pooled.PooledDataSource : Created connection 1901238627.
+[2021-01-02 15:59:03.093] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@71529963]
+[2021-01-02 15:59:03.098] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlog : ==>  Preparing: select id, title, content, author, create_time createTime, update_time updateTime, status from t_blog where id = ? 
+[2021-01-02 15:59:03.116] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlog : ==> Parameters: 1(Integer)
+[2021-01-02 15:59:03.134] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlog : <==      Total: 1
+[2021-01-02 15:59:03.134] [main] INFO  c.b.m.example.MybatisSampleTest : blog : Blog(id=1, title=bbc, content=HelloWorld, author=zhangsan, createTime=Sun Dec 06 21:21:48 CST 2020, updateTime=Sun Dec 06 21:21:51 CST 2020, status=0)
+[2021-01-02 15:59:03.134] [main] INFO  c.b.m.example.MybatisSampleTest : bolgMapper2.class class com.sun.proxy.$Proxy2, hashCode: 101874302
+[2021-01-02 15:59:03.135] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlogs : ==>  Preparing: select * from t_blog 
+[2021-01-02 15:59:03.135] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlogs : ==> Parameters: 
+[2021-01-02 15:59:03.136] [main] WARN  o.a.i.s.AutoMappingUnknownColumnBehavior : Unknown column is detected on 'com.bgw.mybatis.example.mapper.BlogMapper.getBlogs' auto-mapping. Mapping parameters are [columnName=create_time,propertyName=create_time,propertyType=null]
+[2021-01-02 15:59:03.136] [main] WARN  o.a.i.s.AutoMappingUnknownColumnBehavior : Unknown column is detected on 'com.bgw.mybatis.example.mapper.BlogMapper.getBlogs' auto-mapping. Mapping parameters are [columnName=update_time,propertyName=update_time,propertyType=null]
+[2021-01-02 15:59:03.137] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlogs : <==      Total: 1
+[2021-01-02 15:59:03.137] [main] INFO  c.b.m.example.MybatisSampleTest : b : Blog(id=1, title=bbc, content=HelloWorld, author=zhangsan, createTime=null, updateTime=null, status=0)
+[2021-01-02 15:59:03.137] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@71529963]
+[2021-01-02 15:59:03.137] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@71529963]
+[2021-01-02 15:59:03.138] [main] DEBUG o.a.i.d.pooled.PooledDataSource : Returned connection 1901238627 to pool.
+[2021-01-02 16:03:22.582] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-01-02 16:03:22.585] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-01-02 16:03:22.606] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-02 16:03:22.607] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-02 16:03:22.607] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-02 16:03:22.607] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
