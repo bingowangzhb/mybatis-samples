@@ -6,6 +6,7 @@
     <properties resource="conf/jdbc.properties">
         <property name="username" value="root"/>
         <property name="password" value="123.abc"/>
+        <property name="org.apache.ibatis.parsing.PropertyParser.default-value-separator" value="?:"/> <!-- 修改默认值的分隔符 -->
     </properties>
 
     <settings>
@@ -24,11 +25,13 @@
         <setting name="localCacheScope" value="SESSION"/>
         <setting name="jdbcTypeForNull" value="OTHER"/>
         <setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString"/>
+        <setting name="returnInstanceForEmptyRow" value="false"/>
         <setting name="logImpl" value="SLF4J"/>
     </settings>
 
     <typeAliases>
         <typeAlias alias="Blog" type="com.bgw.mybatis.example.domain.Blog"/>
+        <typeAlias alias="Author" type="com.bgw.mybatis.example.domain.Author"/>
     </typeAliases>
 
     <typeHandlers>
@@ -54,6 +57,7 @@
     </environments>
     <mappers>
         <mapper resource="mapper/BlogMapper.xml"/>
+        <mapper resource="mapper/AuthorMapper.xml"/>
 <!--        <mapper class="com.bgw.mybatis.example.mapper.BlogMapper"/>-->
     </mappers>
 

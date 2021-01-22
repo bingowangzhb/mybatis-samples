@@ -45,7 +45,7 @@ public class MybatisSampleTest {
     @Test
     public void selectSqlSession() {
         try (SqlSession sqlSession = sqlSessionFactory.openSession()) {
-            Blog blog = sqlSession.selectOne("com.bgw.mybatis.example.mapper.BlogMapper.getBlog", 1);
+            Blog blog = sqlSession.selectOne("com.bgw.mybatis.example.mapper.BlogMapper.getBlog", 2);
             log.info("blog : {}", blog);
         }
     }
@@ -55,14 +55,14 @@ public class MybatisSampleTest {
         try (SqlSession sqlSession = sqlSessionFactory.openSession()) {
             BlogMapper blogMapper = sqlSession.getMapper(BlogMapper.class);
             log.info("bolgMapper.class {}, hashCode: {}", blogMapper.getClass(), blogMapper.hashCode());
-            Blog blog = blogMapper.getBlog(1);
+            Blog blog = blogMapper.getBlog(2);
             log.info("blog : {}", blog);
 
 
             BlogMapper blogMapper2 = sqlSession.getMapper(BlogMapper.class);
             log.info("bolgMapper2.class {}, hashCode: {}", blogMapper2.getClass(), blogMapper2.hashCode());
 
-            List<Blog> blogs = blogMapper.getBlogs();
+            List<Blog> blogs = blogMapper.listAll();
             for (Blog b : blogs) {
                 log.info("b : {}", b);
             }
