@@ -1,0 +1,33 @@
+@startuml
+
+interface SqlSource {
++ getBoundSql(Object):BoundSql
+}
+
+class DynamicSqlSource implements SqlSource {
+- configuration : Configuration
+- rootSqlNode : SqlNode
+}
+
+class RawSqlSource implements SqlSource {
+- sqlSource : SqlSource
+}
+
+class StaticSqlSource implements SqlSource {
+- sql : String
+- parameterMappings : List<ParameterMapping>
+- configuration : Configuration
+}
+
+class ProviderSqlSource implements SqlSource {
+- configuration : Configuration
+- providerType : Class<?>
+- languageDriver : LanguageDriver
+- providerMethod : Method
+- providerMethodArgumentNames : String[]
+- providerMethodParameterTypes : Class<?>[]
+- providerContext : ProviderContext
+- providerContextIndex : Integer
+
+}
+@enduml

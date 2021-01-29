@@ -1,0 +1,52 @@
+@startuml
+
+interface SqlNode {
++ apply(DynamicContext) : boolean
+}
+class TrimSqlNode implements SqlNode {
+- contents : SqlNode
+- prefix : String
+- suffix : String
+- prefixesToOverride : List<String>
+- suffixesToOverride : List<String>
+- configuration : Configuration
+
++ TrimSqlNode()
+}
+class SetSqlNode extends TrimSqlNode {
+- {static} COMMA : List<String>
+}
+class WhereSqlNode extends TrimSqlNode {
+- {static} prefixList : List<String>
+}
+class ChooseSqlNode implements SqlNode {
+- defaultSqlNode : SqlNode
+- ifSqlNodes : List<SqlNode>
+}
+class ForEachSqlNode implements SqlNode {
+- evaluator : ExpressionEvaluator
+- collectionExpression : String
+- contents : SqlNode
+- open : String
+- close : String
+- separator : String
+- item : String
+- index : String
+- configuration : Configuration
+}
+class IfSqlNode implements SqlNode {
+- evaluator : ExpressionEvaluator
+- test : String
+- contents : SqlNode
+}
+class StaticTextSqlNode implements SqlNode {
+- text : String
+}
+class TextSqlNode implements SqlNode {
+- text : String
+- injectionFilter : Pattern
+}
+class MixedSqlNode implements SqlNode {
+- contents : List<SqlNode>
+}
+@enduml

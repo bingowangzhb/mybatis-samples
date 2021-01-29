@@ -1,0 +1,49 @@
+@startuml
+
+interface TokenHandler {
++ handleToken(String content) : String
+}
+
+class BindingTokenParser implements TokenHandler {
+- context : DynamicContext
+- injectionFilter : Pattern
+
++ handleToken(String content) : String
+}
+
+class DynamicCheckerTokenParser implements TokenHandler {
+- isDynamic : boolean
++ handleToken(String content) : String
+}
+
+class ParameterMappingTokenHandler extends BaseBuilder implements TokenHandler {
+- parameterMappings : List<ParameterMapping>
+- parameterType : Class<?>
+- metaParameters : MetaObject
+}
+
+class VariableTokenHandler implements TokenHandler {
+- variables : Properties
+- enableDefaultValue : boolean
+- defaultValueSeparator : String
+}
+
+
+class GenericTokenParser {
+
+- openToken : String
+- closeToken : String
+- handler : TokenHandler
+
++ parse(String text) : String
+}
+
+GenericTokenParser --> TokenHandler
+
+note left of GenericTokenParser::parse
+  1111
+end note
+
+
+
+@enduml

@@ -22,9 +22,9 @@ import java.util.List;
  * @author wang
  * @since 2020/12/6 20:54
  **/
-public class MybatisSampleTest {
+public class BlogMapperTest {
 
-    static Logger log = LoggerFactory.getLogger(MybatisSampleTest.class);
+    static Logger log = LoggerFactory.getLogger(BlogMapperTest.class);
 
     static SqlSessionFactory sqlSessionFactory = null;
 
@@ -76,6 +76,9 @@ public class MybatisSampleTest {
             log.info("bolgMapper.class {}, hashCode: {}", blogMapper.getClass(), blogMapper.hashCode());
             Blog blog = blogMapper.getBlog(1);
             log.info("blog : {}", blog);
+
+            Blog blog2 = blogMapper.getBlog(1);
+            log.info("blog2 : {}", blog2);
         }
     }
 }

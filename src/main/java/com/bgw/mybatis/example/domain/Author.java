@@ -3,6 +3,8 @@ package com.bgw.mybatis.example.domain;
 import lombok.Data;
 import lombok.ToString;
 
+import java.io.Serializable;
+
 /**
  * Author
  *
@@ -11,7 +13,7 @@ import lombok.ToString;
  */
 @Data
 @ToString
-public class Author {
+public class Author implements Serializable {
 
     private Integer id;
     private String username;

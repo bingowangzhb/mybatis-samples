@@ -3,6 +3,7 @@ package com.bgw.mybatis.example.domain;
 import lombok.Data;
 import lombok.ToString;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -13,7 +14,7 @@ import java.util.Date;
  **/
 @Data
 @ToString
-public class Blog {
+public class Blog implements Serializable {
     private Integer id;
     private String title;
     private String content;

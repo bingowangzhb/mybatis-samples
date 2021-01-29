@@ -1,0 +1,36 @@
+@startuml
+
+participant XMLConfigBuilder as A
+participant XMLMapperBuilder as B
+participant XMLStatementBuilder as C
+participant XMLLanguageDriver as D
+participant XMLScriptBuilder as E
+A -> A ++ : mapperElement
+A -> B ++ : parse
+B -> B ++ : configurationElement
+B -> B : cacheRefElement
+B -> B : cacheElement
+B -> B : parameterMapElement
+B -> B : resultMapElements
+B -> B : sqlElement
+B -> B ++ : buildStatementFromContext
+B -> C ++ : parseStatementNode
+
+C -> D ++ : createSqlSource
+D -> E ++ : parseScriptNode
+E -> E ++ : parseDynamicTags
+
+return
+
+return
+
+return
+return
+B -> B : bindMapperForNamespace
+B -> B : parsePendingResultMaps
+B -> B : parsePendingCacheRefs
+B -> B : parsePendingStatements
+return
+return
+
+@enduml

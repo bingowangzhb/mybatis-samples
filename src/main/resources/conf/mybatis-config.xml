@@ -5,11 +5,12 @@
 <configuration>
     <properties resource="conf/jdbc.properties">
         <property name="username" value="root"/>
-        <property name="password" value="123.abc"/>
+        <property name="password" value="root"/>
         <property name="org.apache.ibatis.parsing.PropertyParser.default-value-separator" value="?:"/> <!-- 修改默认值的分隔符 -->
     </properties>
 
     <settings>
+        <!--全局性地开启或关闭所有映射器配置文件中已配置的任何（二级）缓存-->
         <setting name="cacheEnabled" value="true"/>
         <setting name="lazyLoadingEnabled" value="true"/>
         <setting name="multipleResultSetsEnabled" value="true"/>

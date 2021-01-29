@@ -1,12 +1,11 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-
 <mapper namespace="com.bgw.mybatis.example.mapper.BlogMapper">
+    <!-- 引用其它命名空间的缓存配置，在多个命名空间中共享相同的缓存配置和实例 -->
+<!--    <cache-ref namespace="com.bgw.mybatis.example.mapper.AuthorMapper"/>-->
 
-    <cache eviction="FIFO" flushInterval="60000" size="512" readOnly="true" >
-        <property name="cacheFile" value="/tmp/my-custom-cache.tmp"/>
-    </cache>
+    <cache/>
 
     <resultMap id="blogResultMap" type="Blog">
         <result column="id" property="id"/>
@@ -15,26 +14,36 @@
         <result column="author" property="author"/>
         <result column="create_time" property="createTime"/>
         <result column="update_time" property="updateTime"/>
-        <result column="status" property="status"/>
+        <result column="state" property="state"/>
     </resultMap>
 
     <sql id="blogColumns">
-        id,
-        title,
-        content,
-        author,
-        create_time,
-        update_time,
-        status
+        id, title, content, author, create_time, update_time, state
     </sql>
+
+    <select id="selectBlog" resultType="Blog">
+        select * from Blog where id = #{id}
+    </select>
 
     <select id="listAll" resultMap="blogResultMap">
         select
         <include refid="blogColumns" />
         from blog
+        where 1 = 1
     </select>
 
-
+    <select id="listByConditions" resultMap="blogResultMap">
+        select id, title, content, author, create_time, update_time, state
+        from blog
+        <where>
+            <if test="title != null or '' != title">
+                title = #{title}
+            </if>
+            <if test="state != null or '' != state">
+                state = #{state}
+            </if>
+        </where>
+    </select>
 
     <select id="getBlog" resultType="Blog" parameterType="int" useCache="true">
         select
@@ -44,7 +53,12 @@
     </select>
 
     <insert id="insertBlog" parameterType="Blog" useGeneratedKeys="true" >
-        insert into blog (title, content, author, create_time, update_time, status)
+        insert into blog (title, content, author, create_time, update_time, state)
+        values (#{title}, #{content}, #{author}, #{createTime}, #{updateTime}, #{status})
+    </insert>
+
+    <insert id="insertBlogs" parameterType="Blog" useGeneratedKeys="true" >
+        insert into blog (title, content, author, create_time, update_time, state)
         values (#{title}, #{content}, #{author}, #{createTime}, #{updateTime}, #{status})
     </insert>
 
@@ -67,5 +81,4 @@
         delete from blog
         where id = #{id}
     </delete>
-
 </mapper>
