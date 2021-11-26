@@ -58,7 +58,6 @@ public class BlogMapperTest {
             Blog blog = blogMapper.getBlog(2);
             log.info("blog : {}", blog);
 
-
             BlogMapper blogMapper2 = sqlSession.getMapper(BlogMapper.class);
             log.info("bolgMapper2.class {}, hashCode: {}", blogMapper2.getClass(), blogMapper2.hashCode());
 

@@ -1,0 +1,28 @@
+@startuml
+
+participant Actor
+participant DefaultSqlSessionFactory as A
+participant Configuration as B
+participant Environment as C
+participant TransactionFactory as D
+participant DefaultSqlSession as E
+autonumber
+Actor -> A ++ : openSession()
+A -> A ++ : openSessionFromDataSource(ExecutorType, TransactionIsolationLevel, AutoCommit)
+A -> B ++ : getEnvironment()
+return
+
+A -> A ++ : getTransactionFactoryFromEnvironment(Environment)
+return
+
+A -> D ++ : newTransaction(DataSource, TransactionIsolationLevel, AutoCommit)
+return
+
+A -> B ++ : newExecutor(Transaction, ExecutorType)
+return
+
+A -> E ++ : new DefaultSqlSession(Configuration, Executor, AutoCommit)
+return
+return
+return
+@enduml

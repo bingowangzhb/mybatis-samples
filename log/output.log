@@ -272,3 +272,241 @@
 [2021-01-09 17:56:25.446] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@47d90b9e]
 [2021-01-09 17:56:25.450] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@47d90b9e]
 [2021-01-09 17:56:25.451] [main] DEBUG o.a.i.d.pooled.PooledDataSource : Returned connection 1205406622 to pool.
+[2021-01-30 16:15:50.500] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-01-30 16:15:50.514] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-01-30 16:15:50.596] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-30 16:15:50.596] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-30 16:15:50.596] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-30 16:15:50.596] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-01-30 17:31:31.787] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : bolgMapper.class class com.sun.proxy.$Proxy6, hashCode: 1471948789
+[2021-01-30 17:31:31.806] [main] DEBUG c.b.m.example.mapper.BlogMapper : Cache Hit Ratio [com.bgw.mybatis.example.mapper.BlogMapper]: 0.0
+[2021-01-30 17:31:31.814] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Opening JDBC Connection
+[2021-02-01 10:22:48.231] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-02-01 10:22:48.246] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-02-01 10:22:48.328] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-02-01 10:22:48.329] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-02-01 10:22:48.329] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-02-01 10:22:48.329] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-02-01 10:31:13.839] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : bolgMapper.class class com.sun.proxy.$Proxy6, hashCode: 1471948789
+[2021-02-01 10:31:13.852] [main] DEBUG c.b.m.example.mapper.BlogMapper : Cache Hit Ratio [com.bgw.mybatis.example.mapper.BlogMapper]: 0.0
+[2021-02-01 10:31:13.859] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Opening JDBC Connection
+[2021-02-01 10:31:22.217] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-02-01 10:31:22.222] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-02-01 10:31:22.254] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-02-01 10:31:22.255] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-02-01 10:31:22.255] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-02-01 10:31:22.255] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-02-01 14:10:29.296] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : bolgMapper.class class com.sun.proxy.$Proxy6, hashCode: 1471948789
+[2021-02-01 14:11:15.851] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-02-01 14:11:15.884] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-02-01 14:11:15.961] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-02-01 14:11:15.962] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-02-01 14:11:15.965] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-02-01 14:11:15.966] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-02-01 14:20:14.051] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : bolgMapper.class class com.sun.proxy.$Proxy6, hashCode: 1471948789
+[2021-02-01 14:20:14.067] [main] DEBUG c.b.m.example.mapper.BlogMapper : Cache Hit Ratio [com.bgw.mybatis.example.mapper.BlogMapper]: 0.0
+[2021-02-01 14:21:25.355] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-02-01 14:21:25.363] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-02-01 14:21:25.400] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-02-01 14:21:25.400] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-02-01 14:21:25.401] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-02-01 14:21:25.402] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-02-01 17:06:11.170] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : bolgMapper.class class com.sun.proxy.$Proxy6, hashCode: 1471948789
+[2021-02-01 17:06:11.194] [main] DEBUG c.b.m.example.mapper.BlogMapper : Cache Hit Ratio [com.bgw.mybatis.example.mapper.BlogMapper]: 0.0
+[2021-02-01 17:06:11.209] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Opening JDBC Connection
+[2021-11-24 16:28:19.441] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-11-24 16:28:19.444] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-11-24 16:28:19.470] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:28:19.470] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:28:19.470] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:28:19.470] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:28:35.624] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Find JAR URL: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/
+[2021-11-24 16:28:35.624] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Not a JAR: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/
+[2021-11-24 16:28:35.674] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: com
+[2021-11-24 16:28:35.675] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: conf
+[2021-11-24 16:28:35.675] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: logback.xml
+[2021-11-24 16:28:35.675] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: mapper
+[2021-11-24 16:28:35.675] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Listing file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/
+[2021-11-24 16:28:35.675] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Find JAR URL: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com
+[2021-11-24 16:28:35.675] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Not a JAR: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com
+[2021-11-24 16:28:35.676] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: bgw
+[2021-11-24 16:28:35.676] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Listing file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com
+[2021-11-24 16:28:35.676] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Find JAR URL: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw
+[2021-11-24 16:28:35.676] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Not a JAR: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw
+[2021-11-24 16:28:35.677] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: mybatis
+[2021-11-24 16:28:35.677] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Listing file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw
+[2021-11-24 16:28:35.677] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Find JAR URL: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis
+[2021-11-24 16:28:35.677] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Not a JAR: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis
+[2021-11-24 16:28:35.678] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: example
+[2021-11-24 16:28:35.678] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Listing file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis
+[2021-11-24 16:28:35.678] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Find JAR URL: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example
+[2021-11-24 16:28:35.678] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Not a JAR: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example
+[2021-11-24 16:28:35.679] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: AuthorMapperTest.class
+[2021-11-24 16:28:35.679] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: BlogMapperTest.class
+[2021-11-24 16:28:35.679] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: domain
+[2021-11-24 16:28:35.680] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: JdbcTest.class
+[2021-11-24 16:28:35.680] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: mapper
+[2021-11-24 16:28:35.680] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: plugins
+[2021-11-24 16:28:35.680] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: typehandler
+[2021-11-24 16:28:35.680] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Listing file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example
+[2021-11-24 16:28:35.680] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Find JAR URL: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/AuthorMapperTest.class
+[2021-11-24 16:28:35.680] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Not a JAR: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/AuthorMapperTest.class
+[2021-11-24 16:28:35.682] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: ����   4 
+[2021-11-24 16:28:35.683] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Find JAR URL: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/BlogMapperTest.class
+[2021-11-24 16:28:35.683] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Not a JAR: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/BlogMapperTest.class
+[2021-11-24 16:28:35.684] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: ����   4 �
+[2021-11-24 16:28:35.686] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Find JAR URL: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/domain
+[2021-11-24 16:28:35.686] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Not a JAR: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/domain
+[2021-11-24 16:28:35.686] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: Author.class
+[2021-11-24 16:28:35.686] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: Blog.class
+[2021-11-24 16:28:35.687] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Listing file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/domain
+[2021-11-24 16:28:35.687] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Find JAR URL: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/domain/Author.class
+[2021-11-24 16:28:35.687] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Not a JAR: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/domain/Author.class
+[2021-11-24 16:28:35.688] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: ����   4 w
+[2021-11-24 16:28:35.689] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Find JAR URL: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/domain/Blog.class
+[2021-11-24 16:28:35.691] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Not a JAR: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/domain/Blog.class
+[2021-11-24 16:28:35.692] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: ����   4 �
+[2021-11-24 16:28:35.692] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Find JAR URL: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/JdbcTest.class
+[2021-11-24 16:28:35.692] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Not a JAR: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/JdbcTest.class
+[2021-11-24 16:28:35.693] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: ����   4 �
+[2021-11-24 16:28:35.694] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Find JAR URL: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/mapper
+[2021-11-24 16:28:35.694] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Not a JAR: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/mapper
+[2021-11-24 16:28:35.695] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: AuthorMapper.class
+[2021-11-24 16:28:35.695] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: BlogMapper.class
+[2021-11-24 16:28:35.695] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Listing file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/mapper
+[2021-11-24 16:28:35.695] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Find JAR URL: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/mapper/AuthorMapper.class
+[2021-11-24 16:28:35.695] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Not a JAR: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/mapper/AuthorMapper.class
+[2021-11-24 16:28:35.696] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: ����   4  
+[2021-11-24 16:28:35.697] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Find JAR URL: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/mapper/BlogMapper.class
+[2021-11-24 16:28:35.698] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Not a JAR: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/mapper/BlogMapper.class
+[2021-11-24 16:28:35.698] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: ����   4    listAll ()Ljava/util/List; 	Signature 9()Ljava/util/List<Lcom/bgw/mybatis/example/domain/Blog;>; getBlog ((I)Lcom/bgw/mybatis/example/domain/Blog; "RuntimeVisibleParameterAnnotations %Lorg/apache/ibatis/annotations/Param; value id 
+[2021-11-24 16:28:35.699] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Find JAR URL: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/plugins
+[2021-11-24 16:28:35.699] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Not a JAR: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/plugins
+[2021-11-24 16:28:35.700] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: ExamplePlugin.class
+[2021-11-24 16:28:35.700] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Listing file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/plugins
+[2021-11-24 16:28:35.700] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Find JAR URL: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/plugins/ExamplePlugin.class
+[2021-11-24 16:28:35.700] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Not a JAR: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/plugins/ExamplePlugin.class
+[2021-11-24 16:28:35.701] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: ����   4 E
+[2021-11-24 16:28:35.701] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Find JAR URL: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/typehandler
+[2021-11-24 16:28:35.701] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Not a JAR: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/typehandler
+[2021-11-24 16:28:35.702] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: ExampleTypeHandler.class
+[2021-11-24 16:28:35.702] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Listing file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/typehandler
+[2021-11-24 16:28:35.703] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Find JAR URL: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/typehandler/ExampleTypeHandler.class
+[2021-11-24 16:28:35.703] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Not a JAR: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/com/bgw/mybatis/example/typehandler/ExampleTypeHandler.class
+[2021-11-24 16:28:35.703] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: ����   4 M
+[2021-11-24 16:28:35.704] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Find JAR URL: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/conf
+[2021-11-24 16:28:35.704] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Not a JAR: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/conf
+[2021-11-24 16:28:35.705] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: jdbc.properties
+[2021-11-24 16:28:35.705] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: mybatis-config.xml
+[2021-11-24 16:28:35.705] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Listing file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/conf
+[2021-11-24 16:28:35.705] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Find JAR URL: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/conf/jdbc.properties
+[2021-11-24 16:28:35.705] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Not a JAR: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/conf/jdbc.properties
+[2021-11-24 16:28:35.706] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: url=jdbc:mysql://localhost:3306/mybatis-samples?serverTimezone=GMT%2B8&useSSL=false
+[2021-11-24 16:28:35.706] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Find JAR URL: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/conf/mybatis-config.xml
+[2021-11-24 16:28:35.706] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Not a JAR: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/conf/mybatis-config.xml
+[2021-11-24 16:28:35.707] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: <?xml version="1.0" encoding="UTF-8" ?>
+[2021-11-24 16:28:35.707] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Find JAR URL: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/logback.xml
+[2021-11-24 16:28:35.707] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Not a JAR: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/logback.xml
+[2021-11-24 16:28:35.708] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: <?xml version="1.0" encoding="UTF-8"?>
+[2021-11-24 16:28:35.708] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Find JAR URL: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/mapper
+[2021-11-24 16:28:35.708] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Not a JAR: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/mapper
+[2021-11-24 16:28:35.709] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: AuthorMapper.xml
+[2021-11-24 16:28:35.709] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: BlogMapper.xml
+[2021-11-24 16:28:35.709] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Listing file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/mapper
+[2021-11-24 16:28:35.709] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Find JAR URL: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/mapper/AuthorMapper.xml
+[2021-11-24 16:28:35.710] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Not a JAR: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/mapper/AuthorMapper.xml
+[2021-11-24 16:28:35.710] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: <!DOCTYPE mapper
+[2021-11-24 16:28:35.711] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Find JAR URL: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/mapper/BlogMapper.xml
+[2021-11-24 16:28:35.711] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Not a JAR: file:/D:/Codes/IdeaProjects/mybatis-samples/target/classes/mapper/BlogMapper.xml
+[2021-11-24 16:28:35.712] [main] DEBUG org.apache.ibatis.io.DefaultVFS : Reader entry: <!DOCTYPE mapper
+[2021-11-24 16:28:35.714] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : ./com
+[2021-11-24 16:28:35.715] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : ./com/bgw
+[2021-11-24 16:28:35.715] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : ./com/bgw/mybatis
+[2021-11-24 16:28:35.715] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : ./com/bgw/mybatis/example
+[2021-11-24 16:28:35.716] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : ./com/bgw/mybatis/example/AuthorMapperTest.class
+[2021-11-24 16:28:35.716] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : ./com/bgw/mybatis/example/BlogMapperTest.class
+[2021-11-24 16:28:35.716] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : ./com/bgw/mybatis/example/domain
+[2021-11-24 16:28:35.716] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : ./com/bgw/mybatis/example/domain/Author.class
+[2021-11-24 16:28:35.716] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : ./com/bgw/mybatis/example/domain/Blog.class
+[2021-11-24 16:28:35.716] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : ./com/bgw/mybatis/example/JdbcTest.class
+[2021-11-24 16:28:35.716] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : ./com/bgw/mybatis/example/mapper
+[2021-11-24 16:28:35.716] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : ./com/bgw/mybatis/example/mapper/AuthorMapper.class
+[2021-11-24 16:28:35.716] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : ./com/bgw/mybatis/example/mapper/BlogMapper.class
+[2021-11-24 16:28:35.716] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : ./com/bgw/mybatis/example/plugins
+[2021-11-24 16:28:35.716] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : ./com/bgw/mybatis/example/plugins/ExamplePlugin.class
+[2021-11-24 16:28:35.716] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : ./com/bgw/mybatis/example/typehandler
+[2021-11-24 16:28:35.716] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : ./com/bgw/mybatis/example/typehandler/ExampleTypeHandler.class
+[2021-11-24 16:28:35.716] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : ./conf
+[2021-11-24 16:28:35.716] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : ./conf/jdbc.properties
+[2021-11-24 16:28:35.716] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : ./conf/mybatis-config.xml
+[2021-11-24 16:28:35.717] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : ./logback.xml
+[2021-11-24 16:28:35.717] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : ./mapper
+[2021-11-24 16:28:35.717] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : ./mapper/AuthorMapper.xml
+[2021-11-24 16:28:35.717] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : ./mapper/BlogMapper.xml
+[2021-11-24 16:33:09.633] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-11-24 16:33:09.636] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-11-24 16:33:09.661] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:33:09.661] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:33:09.661] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:33:09.661] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:33:24.211] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-11-24 16:33:24.214] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-11-24 16:33:24.237] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:33:24.237] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:33:24.237] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:33:24.237] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:37:58.132] [main] DEBUG c.b.m.example.mapper.BlogMapper : Cache Hit Ratio [com.bgw.mybatis.example.mapper.BlogMapper]: 0.0
+[2021-11-24 16:37:58.137] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Opening JDBC Connection
+[2021-11-24 16:38:10.333] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-11-24 16:38:10.336] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-11-24 16:38:10.360] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:38:10.360] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:38:10.360] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:38:10.360] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:41:05.415] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : bolgMapper.class class com.sun.proxy.$Proxy6, hashCode: 1125964210
+[2021-11-24 16:41:07.586] [main] DEBUG c.b.m.example.mapper.BlogMapper : Cache Hit Ratio [com.bgw.mybatis.example.mapper.BlogMapper]: 0.0
+[2021-11-24 16:43:49.402] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Opening JDBC Connection
+[2021-11-24 16:44:10.684] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-11-24 16:44:10.687] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-11-24 16:44:10.712] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:44:10.712] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:44:10.712] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:44:10.712] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:44:14.048] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : bolgMapper.class class com.sun.proxy.$Proxy6, hashCode: 1125964210
+[2021-11-24 16:44:37.638] [main] DEBUG c.b.m.example.mapper.BlogMapper : Cache Hit Ratio [com.bgw.mybatis.example.mapper.BlogMapper]: 0.0
+[2021-11-24 16:44:42.012] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Opening JDBC Connection
+[2021-11-24 16:45:03.509] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-11-24 16:45:03.512] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-11-24 16:45:03.536] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:45:03.536] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:45:03.536] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:45:03.537] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:45:05.507] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : bolgMapper.class class com.sun.proxy.$Proxy6, hashCode: 1125964210
+[2021-11-24 16:45:06.013] [main] DEBUG c.b.m.example.mapper.BlogMapper : Cache Hit Ratio [com.bgw.mybatis.example.mapper.BlogMapper]: 0.0
+[2021-11-24 16:46:31.416] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Opening JDBC Connection
+[2021-11-24 16:52:34.440] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-11-24 16:52:34.443] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-11-24 16:52:34.466] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:52:34.466] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:52:34.466] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:52:34.466] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-24 16:53:18.734] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : bolgMapper.class class com.sun.proxy.$Proxy6, hashCode: 1125964210
+[2021-11-24 16:53:19.723] [main] DEBUG c.b.m.example.mapper.BlogMapper : Cache Hit Ratio [com.bgw.mybatis.example.mapper.BlogMapper]: 0.0
+[2021-11-24 16:53:28.451] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Opening JDBC Connection
+[2021-11-24 16:53:28.649] [main] DEBUG o.a.i.d.pooled.PooledDataSource : Created connection 2131597042.
+[2021-11-24 16:53:28.650] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7f0d96f2]
+[2021-11-24 16:53:28.659] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlog : ==>  Preparing: select id, title, content, author, create_time, update_time, state from blog where id = ? 
+[2021-11-24 17:26:51.856] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlog : ==>  Preparing: select id, title, content, author, create_time, update_time, state from blog where id = ? 
+[2021-11-24 17:37:54.264] [main] DEBUG c.b.m.e.mapper.BlogMapper.getBlog : ==> Parameters: 2(Integer)
+[2021-11-24 17:38:05.366] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7f0d96f2]
+[2021-11-24 17:38:05.366] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@7f0d96f2]
+[2021-11-24 17:38:05.366] [main] DEBUG o.a.i.d.pooled.PooledDataSource : Returned connection 2131597042 to pool.
+[2021-11-25 14:00:46.361] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-11-25 14:00:46.374] [main] DEBUG org.apache.ibatis.logging.LogFactory : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[2021-11-25 14:00:46.403] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-25 14:00:46.403] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-25 14:00:46.403] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-25 14:00:46.403] [main] DEBUG o.a.i.d.pooled.PooledDataSource : PooledDataSource forcefully closed/removed all connections.
+[2021-11-25 14:18:26.897] [main] INFO  c.bgw.mybatis.example.BlogMapperTest : bolgMapper.class class com.sun.proxy.$Proxy6, hashCode: 1551446957
+[2021-11-25 14:18:26.910] [main] DEBUG c.b.m.example.mapper.BlogMapper : Cache Hit Ratio [com.bgw.mybatis.example.mapper.BlogMapper]: 0.0
+[2021-11-25 14:18:26.921] [main] DEBUG o.a.i.t.jdbc.JdbcTransaction : Opening JDBC Connection

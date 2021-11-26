@@ -22,13 +22,11 @@
     </sql>
 
     <select id="selectBlog" resultType="Blog">
-        select * from Blog where id = #{id}
+        select <include refid="blogColumns" /> from blog where id = #{id}
     </select>
 
     <select id="listAll" resultMap="blogResultMap">
-        select
-        <include refid="blogColumns" />
-        from blog
+        select * from blog
         where 1 = 1
     </select>
 

@@ -14,12 +14,7 @@
     </resultMap>
 
     <sql id="authorColumns">
-        id,
-        username,
-        password,
-        email,
-        bio
-        status
+        id, username, password, email, bio
     </sql>
 
     <select id="listAll" resultMap="authorResultMap">

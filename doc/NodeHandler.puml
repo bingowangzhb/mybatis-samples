@@ -1,0 +1,17 @@
+@startuml
+
+interface NodeHandler {
++ handleNode(XNode nodeToHandle, List<SqlNode> targetContents) : void
+}
+
+class BindHandler implements NodeHandler {}
+class TrimHandler implements NodeHandler {}
+class WhereHandler implements NodeHandler {}
+class SetHandler implements NodeHandler {}
+class ForEachHandler implements NodeHandler {}
+class IfHandler implements NodeHandler {}
+class OtherwiseHandler implements NodeHandler {}
+class ChooseHandler implements NodeHandler {}
+
+
+@enduml

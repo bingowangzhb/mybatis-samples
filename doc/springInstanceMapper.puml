@@ -1,0 +1,43 @@
+@startuml
+participant Actor
+participant AbstractBeanFactory as A
+participant "AbstractAutowire\nCapableBeanFactory" as B
+participant FactoryBeanRegistrySupport as C
+participant MapperFactoryBean as D
+participant SqlSessionTemplate as E
+participant Configuration as F
+participant MapperRegistry as G
+participant MapperProxyFactory as H
+participant Proxy as I
+autonumber
+Actor -> A ++ : getBean
+    A -> A ++ : doGetBean
+        A -> B ++ : getObjectForBeanInstance
+            B -> A ++ : getObjectForBeanInstance
+                A -> C ++ : getObjectFromFactoryBean
+                    C -> C ++ : doGetObjectFromFactoryBean
+                        C -> D ++ : getObject
+                            D -> E ++ : getMapper
+                                note over F: mybaits-plus 对应的是 \n MybatisConfiguration
+                                E -> F ++ : getMapper
+                                    note over G: mybaits-plus 对应的是 \n MybatisMapperRegistry
+                                    F -> G ++ : getMapper
+                                        note over H: mybaits-plus 对应的是 \n MybatisMapperProxyFactory
+                                        note over H: MapperProxy<T> mapperProxy = \n new MapperProxy<>(sqlSession, \n mapperInterface, methodCache)
+                                        G -> H ++ : newInstance
+                                            H -> I ++: newProxyInstance
+                                            return
+                                        return
+                                    return
+                                return
+                            return
+                        return
+                    return
+                return
+            return
+        return
+    return
+return
+
+
+@enduml

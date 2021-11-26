@@ -1,0 +1,65 @@
+@startuml
+
+participant Actor
+participant DefaultSqlSessionFactory as A
+participant DefaultSqlSession as B
+participant BlogMapper as C
+participant MapperProxy as D
+participant MapperMethod as E
+participant DefaultSqlSession as F
+participant Configuration as G
+participant BaseExecutor as H
+participant SimpleExecutor as I
+participant MappedStatement as J
+participant BaseStatementHandler as K
+participant PrepareStatementHandler as L
+participant Connection as M
+participant PreparedStatement as N
+autonumber
+
+Actor -> A ++ : openSession
+    A -> B ++ : getMapper
+        B -> C ++ : getBlog
+            C -> D ++ : invoke
+                D -> E ++ : execute
+                    E -> F ++ : selectOne
+                        F -> F ++ : selectList
+                            F -> G ++ : getMappedStatement
+                            return
+                            F -> H ++ : query
+                                H -> I ++ : getBoundSql
+                                return
+                                H -> H : createCacheKey
+                                H -> H ++ : query
+                                    H -> H ++ : queryFromDatabase
+                                        H -> H : operateCache
+                                        H -> I ++ : doQuery
+                                            I -> G ++ : newStatementHandler
+                                            return
+                                            I -> I ++ : prepareStatement
+                                                I -> H ++ : getConnection
+                                                return
+                                                I -> K ++ : prepare
+                                                    K -> L ++ : instantiateStatement
+                                                        L -> M ++ : prepareStatement
+                                                        return
+                                                    return
+                                                return
+                                            return
+                                            I -> L ++ : query
+                                                L -> N ++ : execute
+                                                return
+                                            return
+                                        return
+                                    return
+                               H -> H : operateCache
+                               return
+                            return
+                        return
+                    return
+                return
+            return
+        return
+    return
+return
+@enduml
