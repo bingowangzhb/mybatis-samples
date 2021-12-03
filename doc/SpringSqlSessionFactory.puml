@@ -1,0 +1,54 @@
+@startuml
+participant Actor
+participant MyBatisAutoConfiguration as A
+participant SqlSessionFactoryBean as B
+participant TypeAliasRegistry as C
+participant Configuration as D
+participant TypeHandlerRegistry as E
+participant XmlConfigBuilder as F
+participant XMLMapperBuilder as G
+participant "SpringManaged\nTransactionFactory" as H
+participant Environment as I
+participant SqlSessionFactoryBuilder as J
+participant DefaultSqlSessionFactory as K
+
+Actor -> A ++ : sqlSessionFactory(DataSource)
+    A -> B ++ : new SqlSessionFactoryBean()
+    return
+
+    A -> B ++ : getObject()
+        B -> B ++ : afterPropertiesSet()
+            B -> B ++ : buildSqlSessionFactory()
+                B -> B ++ : scanClasses
+                return
+                B -> C ++ : registerAlias(Class)
+                return
+                B -> D ++ : addInterceptor
+                return
+                B -> E ++ : register(TypeHandler)
+                return
+                B -> F ++ : parse()
+                return
+                B -> G ++ : parse();
+                return
+                B -> H ++ : new SpringManagedTransactionFactory()
+                return
+                B -> I ++ : new Environment(String, SpringManagedTransactionFactory, DataSource)
+                return
+
+                B -> J ++ : build(Configuration)
+                    J -> K ++ : new DefaultSqlSessionFactory(Configuration)
+                    return
+                return
+            return
+        return
+    return
+
+return;
+
+
+
+
+autonumber
+
+@enduml

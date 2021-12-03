@@ -1,28 +1,40 @@
 @startuml
 
 participant Actor
+participant TestCase as TC
+participant SqlSessionFactoryBuilder as S
 participant DefaultSqlSessionFactory as A
 participant Configuration as B
 participant Environment as C
 participant TransactionFactory as D
 participant DefaultSqlSession as E
 autonumber
-Actor -> A ++ : openSession()
-A -> A ++ : openSessionFromDataSource(ExecutorType, TransactionIsolationLevel, AutoCommit)
-A -> B ++ : getEnvironment()
-return
 
-A -> A ++ : getTransactionFactoryFromEnvironment(Environment)
-return
+Actor -> TC ++ : selectBySqlSession
+    TC -> S ++ : builder
+    return
+    TC -> A ++ : openSession(boolean)
+        A -> A ++ : openSessionFromDataSource(ExecutorType, TransactionIsolationLevel, AutoCommit)
+            A -> B ++ : getEnvironment()
+            return
 
-A -> D ++ : newTransaction(DataSource, TransactionIsolationLevel, AutoCommit)
-return
+            A -> A ++ : getTransactionFactoryFromEnvironment(Environment)
+            return
 
-A -> B ++ : newExecutor(Transaction, ExecutorType)
-return
+            A -> D ++ : newTransaction(DataSource, TransactionIsolationLevel, AutoCommit)
+            return
 
-A -> E ++ : new DefaultSqlSession(Configuration, Executor, AutoCommit)
-return
-return
+            A -> B ++ : newExecutor(Transaction, ExecutorType)
+            return
+
+            A -> E ++ : new DefaultSqlSession(Configuration, Executor, AutoCommit)
+            return
+        return
+    return
+
+    TC -> E ++ : close() [handle transaction]
+
+    return
+
 return
 @enduml
